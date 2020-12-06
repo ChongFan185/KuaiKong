@@ -6,6 +6,7 @@
 #include <ctime>
 #include <QTime>
 #include <QDebug>
+#include <QPainterPath>
 #include "radarwidget.h"
 #include "Data/shortradardata.h"
 

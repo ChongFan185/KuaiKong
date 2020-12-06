@@ -1,6 +1,7 @@
 #include "leosurroundviewwidget.h"
+using namespace KuaiKong::UI;
 
-LeoSurroundViewWidget::LeoSurroundViewWidget()
+LeoSurroundViewWidget::LeoSurroundViewWidget(QWidget *parent):SurroundViewWidget(parent)
 {
 
 }

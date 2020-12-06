@@ -1,6 +1,7 @@
 #include "surroundviewwidget.h"
+using namespace KuaiKong::UI;
 
-SurroundViewWidget::SurroundViewWidget()
+SurroundViewWidget::SurroundViewWidget(QWidget *parent):QFrame(parent)
 {
 
 }

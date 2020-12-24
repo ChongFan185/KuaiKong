@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "UI/shortradarwidget.h"
+#include "UI/leosurroundviewwidget.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

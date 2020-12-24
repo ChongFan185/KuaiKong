@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/UI">
+        <file>whitetruck.png</file>
+    </qresource>
+</RCC>

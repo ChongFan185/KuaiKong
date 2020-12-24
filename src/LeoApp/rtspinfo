@@ -1,0 +1,5 @@
+rtspsrc location=rtsp://192.168.1.19:554/1/h264major latency=200 ! rtph264depay ! h264parse ! queue ! v4l2h264dec ! imxvideoconvert_g2d ! video/x-raw,format=YUY2 ! appsink sync=false drop=true
+rtspsrc location=rtsp://192.168.1.19:554/1/h264major latency=200 ! rtph264depay ! h264parse ! queue ! v4l2h264dec ! imxvideoconvert_g2d ! video/x-raw,format=YUY2 ! appsink sync=false drop=true
+rtspsrc location=rtsp://192.168.1.19:554/1/h264major latency=200 ! rtph264depay ! h264parse ! queue ! v4l2h264dec ! imxvideoconvert_g2d ! video/x-raw,format=YUY2 ! appsink sync=false drop=true
+
+

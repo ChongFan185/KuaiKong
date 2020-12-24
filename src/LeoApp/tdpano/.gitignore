@@ -1,0 +1,17 @@
+*
+
+!/leobase/
+!/renderer/
+!/leobase/*/
+!/renderer/*/
+!/onimx/
+!/onimx/*/
+
+!.gitignore
+!Makefile
+!*.pro
+
+!*.c
+!*.cpp
+!*.h
+!*.md

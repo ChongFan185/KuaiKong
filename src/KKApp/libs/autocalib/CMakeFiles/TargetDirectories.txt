@@ -1,0 +1,3 @@
+/home/leoshih/workdir/working/tdpano/libs/autocalib/CMakeFiles/rebuild_cache.dir
+/home/leoshih/workdir/working/tdpano/libs/autocalib/CMakeFiles/autocalib.dir
+/home/leoshih/workdir/working/tdpano/libs/autocalib/CMakeFiles/edit_cache.dir

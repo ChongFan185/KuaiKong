@@ -2,6 +2,21 @@ QT       += core gui widgets
 
 CONFIG += c++11
 
+# 360 view libs
+SourceDir = ./widget \
+        ./rendererex
+LIBS += \
+        $$PWD/libs/renderer/librenderer.a \
+        $$PWD/libs/autocalib/libautocalib.a \
+        $$PWD/libs/leobase/libleobase.a \
+        -lopencv_core -lopencv_videoio -lopencv_imgcodecs -lopencv_imgproc -lopencv_calib3d -lopencv_features2d -pthread
+
+INCLUDEPATH += ./libs \
+                ./libs/leobase \
+               ./libs/renderer \
+               ./libs/autocalib \
+               "/home/fanchong/kuaikong/imx-yocto-bsp/build/tmp/work/aarch64-mx8-poky-linux/opencv/4.2.0.imx-r0/image/usr/include"
+
 # You can make your code fail to compile if it uses deprecated APIs.
 # In order to do so, uncomment the following line.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0

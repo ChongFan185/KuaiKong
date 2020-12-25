@@ -19,6 +19,8 @@ MainWindow::MainWindow(QWidget *parent)
     radar->setGeometry(90,50,480,720);
     radar->show();
 
+    InitOpenGL();
+
     LeoSurroundViewWidget *surround = new LeoSurroundViewWidget(this);
     surround->setGeometry(90,50,480,720);
     surround->show();
@@ -29,3 +31,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::InitOpenGL()
+{
+
+}

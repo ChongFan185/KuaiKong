@@ -35,7 +35,6 @@ void MainWindow::InitOpenGL()
 {
     if (!QGLFormat::hasOpenGL()){
         LOGE("no opengl");
-        return 1;
     }
     else{
         LOGI("Opengl supportted.\n");

@@ -3,6 +3,8 @@ using namespace KuaiKong::UI;
 
 LeoSurroundViewWidget::LeoSurroundViewWidget(QWidget *parent):SurroundViewWidget(parent)
 {
+    int diswidth = 960;
+    int disheight = 540;
     wndPano.setGeometry(QRect(QPoint(0, 0), QSize(diswidth, disheight)));
     FILE *strfp = fopen("./rtspinfo", "r");
     if(strfp != NULL){

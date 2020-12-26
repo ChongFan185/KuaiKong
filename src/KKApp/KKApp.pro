@@ -3,8 +3,6 @@ QT       += core gui widgets
 CONFIG += c++11
 
 # 360 view libs
-SourceDir = ./widget \
-        ./rendererex
 LIBS += \
         $$PWD/libs/renderer/librenderer.a \
         $$PWD/libs/autocalib/libautocalib.a \
@@ -50,7 +48,9 @@ SOURCES += \
     System/systemtask.cpp \
     UI/leosurroundviewwidget.cpp \
     UI/longradarwidget.cpp \
+    UI/qopenglwidgettdp.cpp \
     UI/radarwidget.cpp \
+    UI/rendererex/rdrrpano.cpp \
     UI/shortradarwidget.cpp \
     UI/surroundviewwidget.cpp \
     main.cpp \
@@ -85,7 +85,9 @@ HEADERS += \
     System/systemtask.h \
     UI/leosurroundviewwidget.h \
     UI/longradarwidget.h \
+    UI/qopenglwidgettdp.h \
     UI/radarwidget.h \
+    UI/rendererex/rdrrpano.h \
     UI/shortradarwidget.h \
     UI/surroundviewwidget.h \
     mainwindow.h

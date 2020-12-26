@@ -7,6 +7,7 @@
 #include <QTime>
 #include <QDebug>
 #include "surroundviewwidget.h"
+#include "qopenglwidgettdp.h"
 
 namespace KuaiKong{
     namespace UI{
@@ -16,6 +17,9 @@ namespace KuaiKong{
         Q_OBJECT
     public:
         LeoSurroundViewWidget(QWidget *parent);
+
+    private:
+        QOpenGLWidgetTdp wndPano;
     };
 
     }

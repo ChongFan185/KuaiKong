@@ -22,7 +22,7 @@ MainWindow::MainWindow(QWidget *parent)
     InitOpenGL();
 
     LeoSurroundViewWidget *surround = new LeoSurroundViewWidget(this);
-    surround->setGeometry(90,50,480,720);
+    surround->setGeometry(580,0,700,720);
     surround->show();
 }
 

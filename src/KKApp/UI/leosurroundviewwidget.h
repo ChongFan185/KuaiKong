@@ -17,9 +17,8 @@ namespace KuaiKong{
         Q_OBJECT
     public:
         LeoSurroundViewWidget(QWidget *parent);
-
     private:
-        QOpenGLWidgetTdp wndPano;
+        QOpenGLWidgetTdp *wndPano;
     };
 
     }

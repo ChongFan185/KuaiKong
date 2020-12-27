@@ -21,8 +21,6 @@
 #include <string.h>
 #include <unistd.h>
 
-//#include "windows.h"
-
 #include <QTimer>
 #include <QPoint>
 #include <QMouseEvent>
@@ -50,9 +48,6 @@
 #endif
 
 using namespace cv;
-
-//VideoCapture cap("videotestsrc ! video/x-raw ! videoscale ! video/x-raw,width=1280,height=720 ! videoconvert ! appsink", CAP_GSTREAMER);
-//VideoCapture cap(1);//("rtspsrc location=rtsp://admin:admin@192.168.1.9/1/0.sdp? latency=0 ! rtph264depay ! h264parse ! queue ! vpudec ! appsink sync=false", CAP_GSTREAMER);
 
 Mat capyuv[4];
 Mat capOrg;
@@ -91,13 +86,9 @@ QOpenGLWidgetTdp::QOpenGLWidgetTdp(QWidget *parent)
 
     initKeyMap();
     LOGI("wd ini 1\n");
-//    mrender.modiDirectory("/mnt/hgfs/leoshih/code/tdpano.data");
-//    mrender.modiDirectory("d:/leoshih/code/working/tdpano.data");
 #ifdef linux
    mrender.modiDirectory("/home/tdpano.data");
 #endif
-    //    mrender.modiModelFile("mdl-focus-1.tdo");
-//    mrender.modiModelFile("mdl-bus-2.tdo");
     mrender.modiModelFile("truck1.tdo");
     mrender.modiBrpFile("lens-8296-r554.brp");
 
@@ -121,11 +112,6 @@ QOpenGLWidgetTdp::QOpenGLWidgetTdp(QWidget *parent)
     }
     LOGI("wd ini 2\n");
 
-//    cap.open("rtspsrc location=rtsp://admin:admin@192.168.1.41/1/0.sdp? latency=0 ! rtph264depay ! h264parse ! queue ! vpudec ! appsink sync=false", CAP_GSTREAMER);
-//    capIm0 = imread("/home/tdpano.data/pic-1080p-default.jpg", 1);
-//    capIm1 = imread("/home/tdpano.data/pic-1080p-default.jpg", 1);
-//      
-
 #ifdef linux
    Mat ttemp;
    Mat ttempx(540,960,CV_8UC3);
@@ -140,16 +126,6 @@ QOpenGLWidgetTdp::QOpenGLWidgetTdp(QWidget *parent)
    cvtColor(ttempx, cap420[3], CV_BGR2YUV_I420);
 
 #endif
-#ifdef WIN_DESKTOP
-   capIm0 = imread("D:/leoshih/code/working/tdpano.data/pic-1080p-default.jpg", 1);
-#endif
-
-   //cap0.open(2);
-   //cap0.open("v4l2src device=/dev/video1 ! video/x-raw,width=1920,height=1080,format=MJPG ! jpegdec ! appsink", CAP_GSTREAMER);
-//   cap.set(CV_CAP_PROP_FOURCC, cv::VideoWriter::fourcc('M', 'J', 'P', 'G'));
-//   cap.set(CV_CAP_PROP_FRAME_WIDTH,1920);
-//   cap.set(CV_CAP_PROP_FRAME_HEIGHT,1080);
-
 }
 
 

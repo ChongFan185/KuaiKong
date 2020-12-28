@@ -3,6 +3,8 @@
 #include <QFrame>
 #include <QTimer>
 #include <QPainter>
+#include <QBrush>
+#include <QColor>
 #include <ctime>
 #include <QTime>
 #include <QDebug>
@@ -37,6 +39,8 @@ namespace KuaiKong{
         int picSizeY;
 
         QPainter *painter;
+
+        QColor *base_color;
     };
 
     }

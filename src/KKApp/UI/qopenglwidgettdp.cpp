@@ -149,7 +149,7 @@ void QOpenGLWidgetTdp::initializeGL()
 
     mrender.ctrl.enButton =true;
 //    mrender.ctrl.enAllbs = true;
-    mrender.ctrl.enAvm2d = true;
+    //mrender.ctrl.enAvm2d = true;//topview
 
     mrender.initGL();
 

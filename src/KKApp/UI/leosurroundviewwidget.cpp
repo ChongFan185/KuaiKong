@@ -3,7 +3,7 @@ using namespace KuaiKong::UI;
 
 LeoSurroundViewWidget::LeoSurroundViewWidget(QWidget *parent):SurroundViewWidget(parent)
 {
-    int diswidth = 700;
+    int diswidth = 1280;
     int disheight = 720;
     wndPano = new QOpenGLWidgetTdp(this);
     wndPano->setGeometry(QRect(QPoint(0, 0), QSize(diswidth, disheight)));

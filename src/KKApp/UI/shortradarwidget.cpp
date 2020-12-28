@@ -21,6 +21,8 @@ ShortRadarWidget::ShortRadarWidget(QWidget *parent):RadarWidget(parent)
 
     sizeX=picSizeX+RADAR_WIDGET_BARWIDTH*2;
     sizeY=picSizeY+RADAR_WIDGET_BARWIDTH*2;
+
+    base_color = new QColor(0xFF,0xF3,0xE0);
 }
 
 void ShortRadarWidget::drawBackground(){

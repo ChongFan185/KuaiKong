@@ -15,15 +15,15 @@ MainWindow::MainWindow(QWidget *parent)
     this->setMinimumSize(1280,720);
     this->setPalette(palette);
 
-    ShortRadarWidget *radar = new ShortRadarWidget(this);
-    radar->setGeometry(90,50,480,720);
-    radar->show();
-
     InitOpenGL();
 
     LeoSurroundViewWidget *surround = new LeoSurroundViewWidget(this);
-    surround->setGeometry(580,0,700,720);
+    surround->setGeometry(0,0,840,720);
     surround->show();
+
+    ShortRadarWidget *radar = new ShortRadarWidget(this);
+    radar->setGeometry(900,50,480,720);
+    radar->show();
 }
 
 MainWindow::~MainWindow()

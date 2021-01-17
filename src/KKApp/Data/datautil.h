@@ -2,6 +2,7 @@
 #define DATAUTIL_H
 
 #include <QObject>
+#include <QString>
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QJsonArray>
@@ -13,7 +14,7 @@ public:
     explicit DataUtil(QObject *parent = nullptr);
     void Parse(QString);
     QJsonObject QstringToJson(QString jsonString);
-    QString DataUtil::JsonToQstring(QJsonObject jsonObject);
+    QString JsonToQstring(QJsonObject jsonObject);
 
 signals:
     void SendPos(float f);

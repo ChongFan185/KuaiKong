@@ -8,6 +8,7 @@
 #include <ctime>
 #include <QTime>
 #include <QDebug>
+#include <QPoint>
 #include <QPainterPath>
 #include "radarwidget.h"
 #include "Data/shortradardata.h"
@@ -19,6 +20,11 @@ namespace KuaiKong{
     {
     public:
         ShortRadarWidget(QWidget *parent);
+        QPoint top_alert[20];
+        QPoint bot_alert[20];
+        QPoint left_alert[20];
+        QPoint right_alert[20];
+
     private:
         void paintEvent(QPaintEvent *event) override;
         void timerEvent(QTimerEvent *event) override;

@@ -50,6 +50,13 @@ void ShortRadarWidget::drawTopArc(int col, int row, bool danger ,bool background
     painter.setPen(QPen(brush,10,Qt::SolidLine));
     for(int i=0;i<RADAR_WIDGET_STAGE;i++){
         for(int j=0;j<8;j++){
+//            if(j==alert_X && i==alert_Y){
+//                QBrush brush(QColor(0xFF,0x00,0x00));
+//                painter.setPen(QPen(brush,10,Qt::SolidLine));
+//            }else{
+//                QBrush brush(QColor(0xFF,0xF3,0xE0));
+//                painter.setPen(QPen(brush,10,Qt::SolidLine));
+//            }
             painter.drawArc(10+(picSizeX/12*i/2)*2,10+(picSizeX/12*i/2)*2,(picSizeX-picSizeX/12*i)*2,(picSizeX-picSizeX/12*i)*2,(-37.5+30*j+RADAR_WIDGET_SPAN*2)*16,(30-RADAR_WIDGET_SPAN*(1+i*0.1))*16);
         }
     }

@@ -1,4 +1,4 @@
-QT       += core gui widgets opengl
+QT       += core gui widgets opengl network
 
 CONFIG += c++11
 
@@ -20,12 +20,14 @@ INCLUDEPATH += ./libs \
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    Connection/connectorclient.cpp \
     Connection/databaseconnection.cpp \
     Connection/fileconnection.cpp \
     Connection/httpconnection.cpp \
     Connection/iconnection.cpp \
     Connection/tcpconnection.cpp \
     Data/basicdata.cpp \
+    Data/datautil.cpp \
     Data/longradardata.cpp \
     Data/radardata.cpp \
     Data/shortradardata.cpp \
@@ -57,12 +59,15 @@ SOURCES += \
     mainwindow.cpp
 
 HEADERS += \
+    Connection/connectorclient.h \
     Connection/databaseconnection.h \
     Connection/fileconnection.h \
     Connection/httpconnection.h \
     Connection/iconnection.h \
     Connection/tcpconnection.h \
+    Data/ConfigUtil.h \
     Data/basicdata.h \
+    Data/datautil.h \
     Data/longradardata.h \
     Data/radardata.h \
     Data/shortradardata.h \
